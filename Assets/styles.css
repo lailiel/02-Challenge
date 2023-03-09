@@ -42,15 +42,17 @@ h2{
 img{
     border:solid;
     border-color: lightblue;
+    width: 100px;
     /* try to add border opacity over the image? */
 }
 
 
+.project-main{
+    display:flex;
 
-.Project-Main{
 
 }
 
 .project{
-    
+
 }
