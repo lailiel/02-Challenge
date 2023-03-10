@@ -1,12 +1,12 @@
 :root{
     --header-text: white;
-    --header-background: teal;
-    --title-text: teal;
-    --border: lightblue;
-    --image-border: solid 5px lightblue;
-    --link-text: rgb(173, 194, 230);
-    --link-hover: rgb(3, 80, 157); 
-}
+    --header-background: #59C1BD;
+    --title-text: #59C1BD;
+    --border: #A0E4CB;
+    --image-border: solid 5px #A0E4CB;
+    --link-text: #A0E4CB;
+    --link-hover: #0D4C92;
+ }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -66,12 +66,6 @@ img{
 }
 
 
-.project-main{
-    display:flex;
-
-
-}
-
-.project{
-
+.project-image:hover{
+    border: solid 20px black;
 }
