@@ -17,10 +17,10 @@
         <!-- format, inline smaller text, right justified -->
             <ul>
                 <li>
-                    <a href="#About Me">About</a>
+                    <a href="#About">About</a>
                 </li>
                 <li>
-                    <a href="#My Work">Work</a>
+                    <a href="#Work">Work</a>
                 </li>
                 <li>
                     <a href="#Contact">Contact Info</a>
@@ -31,28 +31,43 @@
             </ul>
         </nav>
     </header>
+    <main >
+        <aside id="About" class="aside"></aside>
+            <h2>About Me
+                <img id="portrait" src="/Assets/Images/Picture.jpg" alt="Photo of Abigail Livick"/>
+            </h2>
+        
+        </aside>
+        <section><p>about me text</p></section>
+        
+    </main>
 
-
-    <section>
-        <h2>About Me</h2>
-        <img src="/Assets/Images/Picture.jpg" alt="Photo of Abigail Livick"/>
-        <p>about me text</p>
-    </section>
-
-    <section>
-        <h2>My Work</h2>
-            <project class="project-main"> Most Recent</project>
+    <main>
+        <aside id="Work" class="aside">
+            <h2>My Work</h2>
+        </aside>
+      
+        <section class="project-current"> 
+            <h3>Current</h3>
             <img src="/Assets/Images/Sage.jpg" alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses"/>
             <!-- format to fill space, add boarder, hover, and haze -->
+        </section>
 
-            <project class="project"> Other projects</project>
+        <section class="project-container">
+            <h3>Project 1</h3>
+            <img class="project" src="/Assets/Images/Sage.jpg" alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses"/>
+            
+            <h3>Project 2</h3>
+            <img class="project" src="/Assets/Images/Sage.jpg" alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses"/>
+            
+        </section>
             <!-- match same format as Most Recent, except fill 50% and then stack vertically -->
             <!-- this must be responsive to screen size -->
 
 
-    </section>    
-
-    <footer> Contact Info</footer>
+    </main>     
+   
+    <footer id="Contact"> Contact Info</footer>
         <!-- footer containing clickable links -->
         <!-- format, inline smaller text, right justified -->
     <ul>
