@@ -3,7 +3,9 @@
     --header-background: teal;
     --title-text: teal;
     --border: lightblue;
-    --image-border: solid 10px lightblue;
+    --image-border: solid 5px lightblue;
+    --link-text: rgb(173, 194, 230);
+    --link-hover: rgb(3, 80, 157); 
 }
 
 * {
@@ -29,13 +31,21 @@ ul {
 
 }
 
-li {
+li{
   
     display: inline-block;
-    color: var(--header-text);
-
-    
 }
+
+
+a{
+    color: var(--link-text);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--link-hover)
+}
+
 
 .h1{
     font-size: 100%;
@@ -49,7 +59,7 @@ h2{
 }
 
 img{
-    border:solid;
+    border: var(--image-border);
     border-color: var(--border);
     width: 100px;
     /* try to add border opacity over the image? */
