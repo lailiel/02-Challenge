@@ -1,11 +1,11 @@
 :root{
     --header-text: white;
-    --header-background: #59C1BD;
+    --header-background: #0D4C92;
     --title-text: #59C1BD;
     --border: #A0E4CB;
     --image-border: solid 5px #A0E4CB;
-    --link-text: #A0E4CB;
-    --link-hover: #0D4C92;
+    --link-text: #59C1BD;
+    --link-hover: #A0E4CB;
  }
 
 * {
@@ -43,7 +43,9 @@ a{
 }
 
 a:hover{
-    color: var(--link-hover)
+    color: var(--link-hover);
+    transition-property: ;
+    transform: scale(1.1);
 }
 
 
@@ -56,6 +58,7 @@ a:hover{
 h2{
     font-size: 100%;
     color: var(--title-text);
+    background-image: ;
 }
 
 img{
