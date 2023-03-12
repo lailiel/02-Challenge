@@ -16,7 +16,7 @@
 }
 
 
-.header {
+header {
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +34,7 @@ ul {
 li{
   
     display: inline-block;
+    padding: 5px;
 }
 
 
@@ -55,10 +56,16 @@ a:hover{
     color: var(--title-text);
 }
 
-h2{
+h2, h3{
     font-size: 100%;
     color: var(--title-text);
-    background-image: ;
+}
+
+
+h4{
+    font-size: 125%;
+    color: var(--header-text);
+    font-weight: normal;
 }
 
 img{
@@ -71,4 +78,13 @@ img{
 
 .project-image:hover{
     border: solid 20px black;
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--header-background);
+    Color: var(--header-text);
 }
