@@ -42,7 +42,6 @@ a {
 
 a:hover {
     color: var(--link-hover);
-    transform: scale(1.1);
 }
 
 
@@ -54,7 +53,7 @@ a:hover {
 
 h2,
 h3 {
-    font-size: 100%;
+    font-size: 120%;
     color: var(--title-text);
 }
 
@@ -65,6 +64,12 @@ h4 {
     font-weight: normal;
 }
 
+p{
+    display:flex;
+    border-left: solid black 3px;
+    justify-content: left
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -73,10 +78,25 @@ main {
 
 
 
-section {
+.section {
+    display:flex;
     flex: 2;
-    padding: 0px;
-    align-content: column;
+    padding: 25px;
+    flex-direction: row;
+    align-items:center;
+
+}
+
+.title-about{
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: right;
+}
+
+.title-work{
+    display:flex;
+    flex-direction: column;
 }
 
 /* this affects portrait size */
@@ -93,8 +113,10 @@ img {
 
 .project1 {
     display: flex;
+    padding: 200px;
     background-image: url("../Assets/Images/Sage.jpg");
-    background-size: 200px;
+    background-repeat: no-repeat;
+    background-size: contain ;
 }
 
 .project2,
@@ -102,13 +124,14 @@ img {
 .project4,
 .project5 {
     display: flex;
+    padding: 200px;
     flex-wrap: wrap;
-    background-size: 200px;
     background-image: url("../Assets/Images/Sage.jpg");
-    /* check this */
+    background-repeat: no-repeat;
+    background-size: contain ;
     /* try to add border opacity over the image? */
     /* figure out how to make the pictures the right sizes */
-    flex-basis: calc(50%)
+   
 }
 
 .project1:hover,
