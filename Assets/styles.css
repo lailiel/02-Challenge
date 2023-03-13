@@ -1,4 +1,4 @@
-:root{
+:root {
     --header-text: white;
     --header-background: #0D4C92;
     --title-text: #59C1BD;
@@ -6,7 +6,7 @@
     --image-border: solid 5px #A0E4CB;
     --link-text: #59C1BD;
     --link-hover: #A0E4CB;
- }
+}
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,116 +17,114 @@
 
 
 header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: var(--header-background);
     Color: var(--header-text);
-
 }
 
 ul {
     list-style-type: none;
-
 }
 
-li{
-  
+li {
     display: inline-block;
     padding: 5px;
 }
 
 
-a{
+a {
     color: var(--link-text);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: var(--link-hover);
     transition-property: ;
     transform: scale(1.1);
 }
 
 
-.h1{
+.h1 {
     font-size: 100%;
-    display:inline-block;
+    display: inline-block;
     color: var(--title-text);
 }
 
-h2, h3{
+h2,
+h3 {
     font-size: 100%;
     color: var(--title-text);
 }
 
 
-h4{
+h4 {
     font-size: 125%;
     color: var(--header-text);
     font-weight: normal;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
 
-  
+
 section {
     flex: 2;
     padding: 0px;
     align-content: column;
-    
-  }
-
+}
 
 /* this affects portrait size */
-img{
+img {
     border: var(--image-border);
     border-color: var(--border);
     width: 100px;
 }
 
-
-.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover{
-    border: solid 20px black;
+#Work {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-
-#Work{
-    display:flex;
-    flex-wrap:wrap;
-    
-}
-
-.project1{
+.project1 {
     display: flex;
     background-image: url("../Assets/Images/Sage.jpg");
     background-size: 200px;
 }
 
-.project2, .project3, .project4, .project5{
+.project2,
+.project3,
+.project4,
+.project5 {
     display: flex;
     flex-wrap: wrap;
-    background-size:200px ;
+    background-size: 200px;
     background-image: url("../Assets/Images/Sage.jpg");
     /* check this */
-     /* try to add border opacity over the image? */
-     /* figure out how to make the pictures the right sizes */
+    /* try to add border opacity over the image? */
+    /* figure out how to make the pictures the right sizes */
     flex-basis: calc(50%)
-    }
+}
 
-    footer {
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: var(--header-background);
-        Color: var(--header-text);
-    }
-    
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover {
+    border: solid 20px black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--header-background);
+    Color: var(--header-text);
+}
