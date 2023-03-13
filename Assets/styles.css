@@ -68,23 +68,65 @@ h4{
     font-weight: normal;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+  
+section {
+    flex: 2;
+    padding: 0px;
+    align-content: column;
+    
+  }
+
+
+/* this affects portrait size */
 img{
     border: var(--image-border);
     border-color: var(--border);
     width: 100px;
-    /* try to add border opacity over the image? */
 }
 
 
-.project-image:hover{
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover{
     border: solid 20px black;
 }
 
-footer {
+
+
+#Work{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--header-background);
-    Color: var(--header-text);
+    flex-wrap:wrap;
+    
 }
+
+.project1{
+    display: flex;
+    background-image: url("../Assets/Images/Sage.jpg");
+    background-size: 200px;
+}
+
+.project2, .project3, .project4, .project5{
+    display: flex;
+    flex-wrap: wrap;
+    background-size:200px ;
+    background-image: url("../Assets/Images/Sage.jpg");
+    /* check this */
+     /* try to add border opacity over the image? */
+     /* figure out how to make the pictures the right sizes */
+    flex-basis: calc(50%)
+    }
+
+    footer {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--header-background);
+        Color: var(--header-text);
+    }
+    

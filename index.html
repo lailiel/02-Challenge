@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <title>Abigail Livick</title>
     <!-- ADD TAB ICON, RABBIT? -->
 </head>
+
 <body>
     <header class="header">
         <h1>Abigail Livick</h1>
         <!-- style, bold text, indepenent color, large centered in banner and left justified -->
-        
-        <nav> 
-        <!-- format, inline smaller text, right justified -->
+
+        <nav>
+            <!-- format, inline smaller text, right justified -->
             <ul>
                 <li>
                     <a href="#About">About</a>
@@ -31,52 +33,71 @@
             </ul>
         </nav>
     </header>
-    <main >
-        <aside id="About" class="aside"></aside>
-            <h2>About Me
-                <img id="portrait" src="/Assets/Images/Picture.jpg" alt="Photo of Abigail Livick"/>
-            </h2>
-        
-        </aside>
-        <section><p>about me text</p></section>
-        
+    <main>
+        <section id="About" class="section">
+            <h2>About Me </h2>
+            <img id="portrait" src="/Assets/Images/Picture.jpg" alt="Photo of Abigail Livick" />
+            <div>
+                <p>about me text</p>
+            </div>
+        </section>
+
+        <section id="Work" class="section">
+            <h2>My Work</h2>
+            <!-- <div class="project-current">
+                <h3>Current</h3>
+                <img class="project-image" src="/Assets/Images/Sage.jpg"
+                    alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses" />
+            </div>
+        </section> -->
+
+            <div>
+                <a class="project1">
+                    <div>
+                        <h3>Project 1</h3>
+                    </div>
+                </a>
+
+                <!-- match same format as Most Recent, except fill 50% and then stack vertically -->
+                <!-- this must be responsive to screen size -->
+                <a class="project2">
+                    <div>
+                        <h3>Project 2</h3>
+                    </div>
+                </a>
+
+                <a class="project3">
+                    <div>
+                        <h3>Project 3</h3>
+                    </div>
+                </a>
+
+                <a class="project4">
+                    <div>
+                        <h3>Project 4</h3>
+                    </div>
+                </a>
+
+                <a class="project5">
+                    <div>
+                        <h3>Project 5</h3>
+                    </div>
+                </a>
+                <!-- alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses" /> -->
+
+        </section>
+       
     </main>
 
-    <main>
-        <aside id="Work" class="aside">
-            <h2>My Work</h2>
-        </aside>
-      
-        <section class="project-current"> 
-            <h3>Current</h3>
-            <img class="project-image" src="/Assets/Images/Sage.jpg" alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses"/>
-            <!-- format to fill space, add boarder, hover, and haze -->
-        </section>
-
-        <section class="project-container">
-            <h3>Project 1</h3>
-            <img class="project-image" src="/Assets/Images/Sage.jpg" alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses"/>
-            
-            <h3>Project 2</h3>
-            <img class="project-image" src="/Assets/Images/Sage.jpg" alt="Photo of Sage, an Australian Shephard/Collie mix, wearing a hawaiian shirt and sunglasses"/>
-            
-        </section>
-            <!-- match same format as Most Recent, except fill 50% and then stack vertically -->
-            <!-- this must be responsive to screen size -->
-
-
-    </main>     
-   
     <footer id="Contact">
         <h4> Contact Info</h4>
-        <!-- footer containing clickable links -->
-        <!-- format, inline smaller text, right justified -->
         <ul>
             <li><a href="#">Phone #</a></li>
             <li><a href="mailto:abilivick@gmail.com">Email</a></li>
             <li><a href="#">Website</a></li>
             <li><a href="https://github.com/lailiel">GitHub</a></li>
-         </ul>
+        </ul>
     </footer>
 </body>
+
 </html>
