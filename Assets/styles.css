@@ -16,6 +16,10 @@
     margin: 0;
 }
 
+body{
+    top: 14vw;
+    position: absolute;
+}
 
 header {
     display: flex;
@@ -25,6 +29,9 @@ header {
     padding: 20px;
     background-color: var(--header-background);
     Color: var(--header-text);
+    width: 100vw;
+    position: fixed;
+    top:0;
 }
 
 ul {
@@ -68,7 +75,6 @@ h3 {
     padding: 0px 0px 15px 0px;
 }
 
-
 h4 {
     font-size: 125%;
     color: var(--header-text);
@@ -88,15 +94,12 @@ main {
     flex-wrap: wrap;
 }
 
-
-
 .section {
     display:flex;
     flex: 2;
     padding: 25px;
     flex-direction: row;
     align-items:center;
-
 }
 
 .title-about{
@@ -120,6 +123,18 @@ img {
     width: 100px;
 }
 
+content{
+    display:flex;
+    flex-direction: column;
+}
+
+.project-holder{
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    flex-wrap: wrap;
+}
+
 #Work {
     display: flex;
     flex-wrap: wrap;
@@ -127,10 +142,14 @@ img {
 
 .project1 {
     display: flex;
+    width: 80vw;
     padding: 200px;
+    border: var(--image-border);
     background-image: url("../Assets/Images/Sage.jpg");
     background-repeat: no-repeat;
-    background-size: contain ;
+    background-size: cover;
+    background-position: center center;
+  
 }
 
 .project2,
@@ -138,11 +157,16 @@ img {
 .project4,
 .project5 {
     display: flex;
+    flex-shrink: 2;
+    width: 50%;
+    height: 40vh;
     padding: 200px;
-    flex-wrap: wrap;
+    border: var(--image-border);
     background-image: url("../Assets/Images/Sage.jpg");
     background-repeat: no-repeat;
-    background-size: contain ;
+    background-size: cover;
+    background-position: center center;
+    
     /* try to add border opacity over the image? */
     /* figure out how to make the pictures the right sizes */
    
