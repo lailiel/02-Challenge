@@ -20,6 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 150px;
     padding: 20px;
     background-color: var(--header-background);
     Color: var(--header-text);
@@ -46,7 +47,7 @@ a:hover {
 
 
 .h1 {
-    font-size: 100%;
+    font-size: 150%;
     display: inline-block;
     color: var(--title-text);
 }
@@ -55,6 +56,7 @@ h2,
 h3 {
     font-size: 120%;
     color: var(--title-text);
+    padding: 0px 0px 15px 0px;
 }
 
 
@@ -67,7 +69,8 @@ h4 {
 p{
     display:flex;
     border-left: solid black 3px;
-    justify-content: left
+    justify-content: left;
+    padding: 25px;
 }
 
 main {
@@ -97,6 +100,8 @@ main {
 .title-work{
     display:flex;
     flex-direction: column;
+    padding: 30px;
+    text-align: right;
 }
 
 /* this affects portrait size */
