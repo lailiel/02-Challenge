@@ -1,7 +1,8 @@
 :root {
     --header-text: white;
     --header-background: #0D4C92;
-    --title-text: #59C1BD;
+    --summary-background: #59C1BD;
+    --title-text: #0D4C92;
     --border: #A0E4CB;
     --image-border: solid 5px #A0E4CB;
     --link-text: #59C1BD;
@@ -33,6 +34,14 @@ ul {
 li {
     display: inline-block;
     padding: 5px;
+}
+
+summary{
+    display:flex;
+    background-color: var(--summary-background);
+    color: var(--header-text);
+    padding: 30px;
+    align-content: center;
 }
 
 
