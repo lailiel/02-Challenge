@@ -4,7 +4,7 @@
     --summary-background: #59C1BD;
     --title-text: #0D4C92;
     --border: #A0E4CB;
-    --image-border: solid 5px #A0E4CB;
+    --image-border: solid 0.5vw #A0E4CB;
     --link-text: #59C1BD;
     --link-hover: #A0E4CB;
 }
@@ -25,8 +25,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
-    padding: 20px;
+    height: 10vw;
+    padding: 4vw;
     background-color: var(--header-background);
     Color: var(--header-text);
     width: 100vw;
@@ -34,28 +34,28 @@ header {
     top:0;
 }
 
-ul {
+.ul {
     list-style-type: none;
 }
 
-li {
+.li {
     display: inline-block;
-    padding: 5px;
+    padding: 0.5vw;
 }
 
-summary{
+.summary{
     display:flex;
     background-color: var(--summary-background);
     color: var(--header-text);
-    padding: 30px;
+    padding: 2vw;
     align-content: center;
 }
-
 
 a {
     color: var(--link-text);
     text-decoration: none;
-}
+} 
+
 
 a:hover {
     color: var(--link-hover);
@@ -72,7 +72,7 @@ h2,
 h3 {
     font-size: 120%;
     color: var(--title-text);
-    padding: 0px 0px 15px 0px;
+    padding: 0vw 0vw 1vw 0vw;
 }
 
 h4 {
@@ -83,7 +83,6 @@ h4 {
 
 p{
     display:flex;
-    border-left: solid black 3px;
     justify-content: left;
     padding: 25px;
 }
@@ -94,7 +93,8 @@ main {
     flex-wrap: wrap;
 }
 
-.section {
+/* this was previously .section */
+#About{
     display:flex;
     flex: 2;
     padding: 25px;
@@ -105,15 +105,26 @@ main {
 .title-about{
     display:flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0vw 2vw 0vw 0vw;
     text-align: right;
+    border-right: solid var(--header-background) .3vw;
+}
+
+#Work {
+    display: flex;
+    flex: 2;
+    padding: 25px;
+    flex-direction: row;
 }
 
 .title-work{
     display:flex;
     flex-direction: column;
-    padding: 30px;
+    margin: 0vw 2vw 0vw 0vw;
+    padding: 0vw 2vw 0vw 0vw;
     text-align: right;
+    width: 10vw;
+    border-right: solid var(--header-background) .3vw;
 }
 
 /* this affects portrait size */
@@ -135,10 +146,7 @@ content{
     flex-wrap: wrap;
 }
 
-#Work {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .project1 {
     display: flex;
@@ -152,13 +160,15 @@ content{
   
 }
 
+
+
 .project2,
 .project3,
 .project4,
 .project5 {
     display: flex;
     flex-shrink: 2;
-    width: 50%;
+    width: 40vw;
     height: 40vh;
     padding: 200px;
     border: var(--image-border);
