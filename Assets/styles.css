@@ -55,7 +55,6 @@
 a {
     color: var(--link-text);
     text-decoration: none;
-    padding:
 } 
 
 
@@ -70,7 +69,13 @@ h1{
 }
 
 /* side bar text */
-h2,
+h2{
+    font-size: 120%;
+    color: var(--title-text);
+    padding: 0vw 0vw 1vw 0vw;
+    text-align: center;
+}
+
 h3 {
     font-size: 120%;
     color: var(--title-text);
@@ -147,6 +152,7 @@ content{
     flex-direction: row;
     width: 85vw;
     flex-wrap: wrap;
+    margin: 12.5px;
 }
 
 
@@ -156,7 +162,8 @@ content{
     flex-shrink: 1;
     width: 80vw;
     padding: 20vw;
-    margin: 25px;
+    margin: 25px 25px 0px 25px;
+    justify-content: center;
     border: var(--image-border);
     background-image: url("../Assets/Images/Sage.jpg");
     background-repeat: no-repeat;
@@ -176,9 +183,11 @@ content{
 .project5 {
     display: flex;
     flex-shrink: 2;
-    width: 40vw;
+    width: 39vw;
     height: 20vh;
     padding: 18vw;
+    margin: 12.5px;
+    justify-content: center;
     border: var(--image-border);
     background-image: url("../Assets/Images/Sage.jpg");
     background-repeat: no-repeat;
