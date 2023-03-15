@@ -4,7 +4,7 @@
     --summary-background: #59C1BD;
     --title-text: #0D4C92;
     --border: #A0E4CB;
-    --image-border: solid 0.5vw #A0E4CB;
+    --image-border: solid 6px #A0E4CB;
     --image-border-hover: solid 2vw #A0E4CB;
     --link-text: #59C1BD;
     --link-hover: #A0E4CB;
@@ -73,13 +73,13 @@ h2{
     font-size: 120%;
     color: var(--title-text);
     padding: 0vw 0vw 1vw 0vw;
-    text-align: center;
 }
 
 h3 {
     font-size: 120%;
     color: var(--title-text);
     padding: 0vw 0vw 1vw 0vw;
+    text-align: center;
 }
 
 /* footer text */
@@ -104,35 +104,33 @@ main {
 /* this was previously .section */
 #About{
     display:flex;
-    flex: 2;
-    padding: 2vw;
+    padding: 30px;
     flex-direction: row;
     align-items:center;
 }
 
 .title-about{
     display:flex;
-    width: 10vw;
+    width: 200px;
     flex-direction: column;
-    padding: 0vw 2vw 0vw 0vw;
+    padding: 0vw 25px 0vw 0vw;
     text-align: right;
-    border-right: solid var(--header-background) .3vw;
+    border-right: solid var(--header-background) 5px;
 }
 
 #Work {
     display: flex;
-    flex: 2;
-    padding: 2vw;
+    padding: 30px;
     flex-direction: row;
 }
 
 .title-work{
     display:flex;
-    width: 10vw;
+    width: 129px;
     flex-direction: column;
-    padding: 0vw 2vw 0vw 0vw;
+    padding: 0vw 25px 0vw 0vw;
     text-align: right;
-    border-right: solid var(--header-background) .3vw;
+    border-right: solid var(--header-background) 5px;
 }
 
 /* this affects portrait size */
@@ -160,7 +158,7 @@ content{
 .project1 {
     display: flex;
     flex-shrink: 1;
-    width: 80vw;
+    width: 83vw;
     padding: 20vw;
     margin: 25px 25px 0px 25px;
     justify-content: center;
